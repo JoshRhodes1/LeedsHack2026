@@ -54,7 +54,7 @@ const userIcon = L.divIcon({
 const suggestedIcon = (score: number = 0) => {
     // scale between 1.0 and 2.5 based on score (0 to 1)
     // This makes highly recommended events jump out!
-    const scale = 1.0 + (score * 1.5);
+    const scale = (score * 0.64);
 
     return L.divIcon({
         className: '',
